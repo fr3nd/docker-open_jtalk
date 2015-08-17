@@ -5,6 +5,7 @@ MAINTAINER Carles Amigó, fr3nd@fr3nd.net
 RUN apt-get update && apt-get install -y \
       build-essential \
       curl \
+      lame \
       unzip \
       && rm -rf /usr/share/doc/* && \
       rm -rf /usr/share/info/* && \
