@@ -36,3 +36,5 @@ RUN ./configure \
         --prefix=/usr \
         --with-hts-engine-header-path=/usr/include/ \
         --with-hts-engine-library-path=/usr/lib/ && make && make install
+
+WORKDIR /
