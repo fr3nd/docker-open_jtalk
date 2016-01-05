@@ -22,11 +22,11 @@ RUN mkdir -p /usr/lib/hts-voice
 RUN curl -L http://downloads.sourceforge.net/open-jtalk/hts_voice_nitech_jp_atr503_m001-1.05.tar.gz | tar xvz && \
       mv /opt/hts_voice_nitech_jp_atr503_m001-1.05/*.htsvoice /usr/lib/hts-voice/ && \
       rm -rf /opt/hts_voice_nitech_jp_atr503_m001-1.05
-RUN curl -L http://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/MMDAgent_Example-1.4/MMDAgent_Example-1.4.zip/download > MMDAgent_Example.zip && \
+RUN curl -L http://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/MMDAgent_Example-1.6/MMDAgent_Example-1.6.zip/download > MMDAgent_Example.zip && \
       unzip -x MMDAgent_Example.zip && \
       rm -f MMDAgent_Example.zip && \
-      mv /opt/MMDAgent_Example-1.4/Voice/mei/*.htsvoice /usr/lib/hts-voice/ && \
-      rm -rf /opt/MMDAgent_Example-1.4
+      mv /opt/MMDAgent_Example-1.6/Voice/mei/*.htsvoice /usr/lib/hts-voice/ && \
+      rm -rf /opt/MMDAgent_Example-1.6
 
 
 WORKDIR /opt
