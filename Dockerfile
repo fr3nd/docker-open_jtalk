@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
       rm -rf /var/tmp/*
 
 WORKDIR /opt
-RUN curl -L http://downloads.sourceforge.net/hts-engine/hts_engine_API-1.09.tar.gz | tar xvz
-WORKDIR /opt/hts_engine_API-1.09
+RUN curl -L http://downloads.sourceforge.net/hts-engine/hts_engine_API-1.10.tar.gz | tar xvz
+WORKDIR /opt/hts_engine_API-1.10
 RUN ./configure --prefix=/usr && make && make install
 
 WORKDIR /opt
@@ -30,8 +30,8 @@ RUN curl -L http://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/MMDA
 
 
 WORKDIR /opt
-RUN curl -L http://downloads.sourceforge.net/open-jtalk/open_jtalk-1.08.tar.gz |tar xvz
-WORKDIR /opt/open_jtalk-1.08
+RUN curl -L http://downloads.sourceforge.net/open-jtalk/open_jtalk-1.09.tar.gz |tar xvz
+WORKDIR /opt/open_jtalk-1.09
 RUN ./configure \
         --with-charset=UTF-8 \
         --prefix=/usr \
